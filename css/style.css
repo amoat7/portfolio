@@ -64,7 +64,12 @@ html{
 
     grid-area: 1/2/2/3;
     overflow-wrap: break-word;
-    
+    padding: 8px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
 
 }
 
@@ -113,72 +118,48 @@ li a:hover{
 }
 
 #background-image{
+    
     width: 100%;
     height: 100%;
-    display: flex;
+    grid-area: 1/1/2/2;
     
 }
 
 
 #springbrook{
     
-     
-    margin: auto auto;
-    width: 97%;
-    height: 97%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: grayscale(40%) brightness(50%);
-    
-    
 }
 
 #info{
-
-    position: relative;
-    bottom: 97.5%;
-    width: 94%;
-    height: 95%;
-    border: 1px solid rgba(255, 255,255, 0.3);
-    box-sizing: border-box;
-    line-height: 3rem;
-    color: white;
-    font-size: 1.5rem;
-   padding-left: 10%;
-   padding-right: 10%;
-   text-align: center;
-   overflow-y: scroll;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-  
-    
-}
-
-#info p{
-
-    font-size: 2rem;
-    animation-name: slide;
-    animation-duration: 1s;
-}
-
-#info h1{
-
+    display: flex;
     text-align: center;
-    font-family: 'Arima Madurai', cursive;
-    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-size: 4rem;
+    font-family: 'Arima Madurai', cursive;
+   grid-area: 1/1/2/2;
+   z-index: 10;
+   border: 1px solid rgb(167, 162, 162);
+   margin: 5px;
+  
+}
+
+#info h1, #info p{
     animation-name: slide;
     animation-duration: 1s;
 }
+
 
 #info::-webkit-scrollbar, #info-nav::-webkit-scrollbar {
     display: none;
   }
 
-#info span{
-    font-weight: bold;
-}
 
 
 @keyframes slide {
@@ -192,8 +173,4 @@ li a:hover{
       opacity: 100%;;
     }
   }
-
-#info-nav h2{
-    border-bottom: 1px solid rgba(75, 13, 16, 0.5);
-}
 

@@ -1,77 +1,68 @@
 #about-content{
-
+    width: 100%;
+    height: 100%;
     grid-area: 1/2/2/3;
     overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-
-}
-#about-background{
-    display: flex;
-    height: 30%;
-    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% auto auto;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 #about-image{
 
-    margin: auto auto;
-    width: 97%;
-    height: 90%;
-    object-fit: cover;
+    width: 100%;
+    grid-area: 1/1/2/2;
     filter: grayscale(40%) brightness(50%);
+    
+
 }
 
-#about-info{
-
-    position: relative;
+#about-image img{
     
-    bottom: 50%;
-    width: 94%;
-    height: 25%;
-    border: 1px solid rgba(255, 255,255, 0.3);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about-content #h1{
+    grid-area: 1/1/2/2;
     box-sizing: border-box;
-    line-height: 3rem;
+    color: black;
+    font-size: 2rem;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 1.5rem;
-   padding-left: 10%;
-   padding-right: 10%;
-   text-align: center;
-   overflow-y: scroll;
-   margin: auto auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-  
-    
+    font-size: 4rem;
+    font-family: 'Arima Madurai', cursive;
+    border: 1px solid rgb(167, 162, 162);
+    margin: 5px;
 }
 
-#about-info h1{
-
-    font-size: 2rem;
+#about-content h1{
     animation-name: slide;
     animation-duration: 1s;
+}
+
+#about-me{
+    grid-area: 2/1/3/2;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    animation-name: slide;
+    animation-duration: 1s;
+    line-height: 2rem;
+    
+}
+
+#about-me h2{
+    font-size: 2rem;
     font-family: 'Arima Madurai', cursive;
     font-weight: bold;
-    font-size: 4rem;
-    
-}
-
-#about-info::-webkit-scrollbar {
-    display: none;
-  }
-
-
-#contact-list{
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    animation-name: slide;
-    animation-duration: 1s;
-    position: absolute;
-    bottom: 10%;
-    
-}
-
-#contact-list a{
-    color: #6E1217;
+    margin-bottom: 2rem;
 }
