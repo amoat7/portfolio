@@ -1,0 +1,77 @@
+#about-content{
+
+    grid-area: 1/2/2/3;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+
+}
+#about-background{
+    display: flex;
+    height: 30%;
+    
+}
+
+#about-image{
+
+    margin: auto auto;
+    width: 97%;
+    height: 90%;
+    object-fit: cover;
+    filter: grayscale(40%) brightness(50%);
+}
+
+#about-info{
+
+    position: relative;
+    
+    bottom: 50%;
+    width: 94%;
+    height: 25%;
+    border: 1px solid rgba(255, 255,255, 0.3);
+    box-sizing: border-box;
+    line-height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+   padding-left: 10%;
+   padding-right: 10%;
+   text-align: center;
+   overflow-y: scroll;
+   margin: auto auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+    
+}
+
+#about-info h1{
+
+    font-size: 2rem;
+    animation-name: slide;
+    animation-duration: 1s;
+    font-family: 'Arima Madurai', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    
+}
+
+#about-info::-webkit-scrollbar {
+    display: none;
+  }
+
+
+#contact-list{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    animation-name: slide;
+    animation-duration: 1s;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+#contact-list a{
+    color: #6E1217;
+}
